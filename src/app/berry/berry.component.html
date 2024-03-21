@@ -1,0 +1,11 @@
+<div *ngIf="cargando">
+    <p>Cargando detalles del pokemon</p>
+</div>
+<a *ngIf="berryResultado && !cargando" href={{berryResultado.url}}>
+    <div *ngIf="berry">
+        <h3>{{berry.id}}-{{berry.name}}</h3>
+        <p>Tamaño: {{berry.size}}</p>
+        <p>Suavidad: {{berry.smoothness}}</p>
+        <p>Sequedad del Suelo: {{berry.soil_dryness}}</p>
+    </div>
+</a>

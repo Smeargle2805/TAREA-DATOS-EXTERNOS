@@ -1,0 +1,10 @@
+<div *ngIf="cargando">
+    <p>Cargando detalles del pokemon</p>
+</div>
+<a *ngIf="itemResultado && !cargando" href={{itemResultado.url}}>
+    <div *ngIf="item">
+        <h3>{{item.id}}-{{item.name}}</h3>
+        <p>Categoria: {{item.category.name}}</p>
+        <img src={{item.sprites.default}} alt="">
+    </div>
+</a>
